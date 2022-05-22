@@ -1,15 +1,18 @@
 call plug#begin("~/.config/nvim/plugged")
- " Relative numbers (current ln is 0)
- Plug 'ericbn/vim-relativize'
- " airline alternative
- Plug 'nvim-lualine/lualine.nvim'
- " If you want to have icons in your statusline choose one of these
- Plug 'kyazdani42/nvim-web-devicons'
- " dependencies
- Plug 'nvim-lua/plenary.nvim'
- Plug 'nvim-lua/popup.nvim'
- " Visual Git Plugin
- Plug 'tanvirtin/vgit.nvim'
+
+" Indentation based movements
+Plug 'jeetsukumaran/vim-indentwise'
+" Relative numbers (current ln is 0)
+Plug 'ericbn/vim-relativize'
+" airline alternative
+Plug 'nvim-lualine/lualine.nvim'
+" If you want to have icons in your statusline choose one of these
+Plug 'kyazdani42/nvim-web-devicons'
+" dependencies
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-lua/popup.nvim'
+" Visual Git Plugin
+Plug 'tanvirtin/vgit.nvim'
 call plug#end()
 
 
@@ -47,4 +50,3 @@ require('lualine').setup {
 -- setup vgit
 require('vgit').setup({})
 END
-
