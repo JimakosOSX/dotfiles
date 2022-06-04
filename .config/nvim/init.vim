@@ -1,42 +1,41 @@
 call plug#begin("~/.config/nvim/plugged")
-
-" Indentation based movements
-Plug 'jeetsukumaran/vim-indentwise'
-" Better language packs
-Plug 'sheerun/vim-polyglot'
-" Icons :)
-Plug 'mhinz/vim-signify'
-" Relative numbers (current ln is 0)
-Plug 'ericbn/vim-relativize'
-" Nice icons in the file explorer and file type status line.
-Plug 'ryanoasis/vim-devicons'
-" airline alternative
-Plug 'nvim-lualine/lualine.nvim'
-" If you want to have icons in your statusline choose one of these
-Plug 'kyazdani42/nvim-web-devicons'
-" dependencies
-Plug 'nvim-lua/plenary.nvim'
-Plug 'nvim-lua/popup.nvim'
-" nvim-go
-Plug 'crispgm/nvim-go'
-" recommended - LSP config
-Plug 'neovim/nvim-lspconfig'
-" Conquer of Completion
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-" LaTeX support plugin
-Plug 'lervag/vimtex'
-" coc-ansible
-Plug 'yaegassy/coc-ansible', {'do': 'yarn install --frozen-lockfile'}
-" Helps you win at grep
-Plug 'mhinz/vim-grepper'
-" Terraform
-Plug 'hashivim/vim-terraform'
-Plug 'vim-syntastic/syntastic'
-Plug 'juliosueiras/vim-terraform-completion'
-" Rust
-Plug 'rust-lang/rust.vim'
-" Visual Git Plugin
-Plug 'tanvirtin/vgit.nvim'
+ " Indentation based movements
+ Plug 'jeetsukumaran/vim-indentwise'
+ " Better language packs
+ Plug 'sheerun/vim-polyglot'
+ " Icons :)
+ Plug 'mhinz/vim-signify'
+ " Relative numbers (current ln is 0)
+ Plug 'ericbn/vim-relativize'
+ " Nice icons in the file explorer and file type status line.
+ Plug 'ryanoasis/vim-devicons'
+ " airline alternative
+ Plug 'nvim-lualine/lualine.nvim'
+ " If you want to have icons in your statusline choose one of these
+ Plug 'kyazdani42/nvim-web-devicons'
+ " dependencies
+ Plug 'nvim-lua/plenary.nvim'
+ Plug 'nvim-lua/popup.nvim'
+ " nvim-go
+ Plug 'crispgm/nvim-go'
+ " recommended - LSP config
+ Plug 'neovim/nvim-lspconfig'
+ " Conquer of Completion
+ Plug 'neoclide/coc.nvim', {'branch': 'release'}
+ " LaTeX support plugin
+ Plug 'lervag/vimtex'
+ " Helps you win at grep
+ Plug 'mhinz/vim-grepper'
+ " Terraform
+ Plug 'hashivim/vim-terraform'
+ Plug 'vim-syntastic/syntastic'
+ Plug 'juliosueiras/vim-terraform-completion'
+ " Rust
+ Plug 'rust-lang/rust.vim'
+ " Visual Git Plugin
+ Plug 'tanvirtin/vgit.nvim'
+ " Ansible
+ Plug 'pearofducks/ansible-vim'
 call plug#end()
 
 
@@ -68,7 +67,7 @@ set shell=/bin/bash
 lua << END
 require('lualine').setup {
     options = {
-        theme = 'ayu_light'
+        theme = 'ayu_dark'
         }
 }
 -- setup vgit
