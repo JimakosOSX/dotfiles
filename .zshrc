@@ -104,7 +104,7 @@ source $ZSH/oh-my-zsh.sh
 
 export EDITOR=nvim
 alias vi=$EDITOR
-alias vim=$EDITOR
+#alias vim=$EDITOR
 
 # Locale values
 #LANG=en_US.UTF-8
@@ -131,3 +131,7 @@ source /usr/share/fzf/shell/key-bindings.zsh
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/local/bin/terraform terraform
 alias ls='exa --icons -g'
+
+# work
+alias workonpublic="sed -i 's/True/False/g' $HOME/work/provisioning/digital_ocean.ini"
+alias workonprivate="sed -i 's/False/True/g' $HOME/work/provisioning/digital_ocean.ini"
