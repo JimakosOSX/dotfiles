@@ -1,6 +1,0 @@
-[bluemail]
-name=BlueMail
-baseurl=https://packages.bluemail.me/repos/yum
-enabled=1
-gpgcheck=1
-gpgkey=https://packages.bluemail.me/keys/bluemail.asc
