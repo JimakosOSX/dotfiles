@@ -102,9 +102,9 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-export EDITOR=nvim
+export EDITOR=vim
 alias vi=$EDITOR
-#alias vim=$EDITOR
+alias vim=$EDITOR
 
 # Locale values
 #LANG=en_US.UTF-8

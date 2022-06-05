@@ -25,8 +25,6 @@
       content: "{{ final_package_list }}"
       dest: "./package_list"
 
-      #- name: Remove brackets from package list file
-
   - name: Collect unofficial repositories 
     find:
       paths: "/etc/yum.repos.d"
@@ -68,8 +66,7 @@
       paths: "."
       file_type: file
       recurse: no
-      patterns: ".*\.repo$"
-      use_regex: yes
+      patterns: "*repo" 
     register: backed_up_repos
 
   - name: Restore unofficial repositories
@@ -78,9 +75,14 @@
       dest: "/etc/yum.repos.d"
     loop: "{{ backed_up_repos.files }}"
 
+  - name: Remove brackets from package list file 
+    shell: |
+      cat package_list | awk -F '[' '{print $2}' | awk -F ']' '{print $1}' | tr ',' '\n' | tr '"' ' ' | awk '{print $1}'
+    register: packages
+  
   - name: DNF install packages
     dnf: 
       update_cache: yes
       state: latest
       name: "{{ item }}"
-    loop: "{{ lookup('file', 'package_list').splitlines(',') }}"
+    loop: "{{ packages.stdout_lines }}"
