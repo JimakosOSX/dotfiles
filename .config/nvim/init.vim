@@ -14,17 +14,12 @@ call plug#begin("~/.config/nvim/plugged")
  Plug 'nvim-lua/popup.nvim'
  " recommended - LSP config
  Plug 'neovim/nvim-lspconfig'
+ " diff view
+ Plug 'sindrets/diffview.nvim'
  " Conquer of Completion
  Plug 'neoclide/coc.nvim', {'branch': 'release'}
- " LaTeX support plugin
- Plug 'lervag/vimtex'
- " Terraform
- Plug 'hashivim/vim-terraform'
- Plug 'juliosueiras/vim-terraform-completion'
  " Rust
  Plug 'rust-lang/rust.vim'
- " Visual Git Plugin
- Plug 'tanvirtin/vgit.nvim'
  " Ansible
  Plug 'pearofducks/ansible-vim'
 call plug#end()
@@ -61,8 +56,6 @@ require('lualine').setup {
         theme = 'ayu_light'
         }
 }
--- setup vgit
-require('vgit').setup({})
 END
 
 " VimTeX Settings
