@@ -22,6 +22,8 @@ call plug#begin("~/.config/nvim/plugged")
  Plug 'rust-lang/rust.vim'
  " Ansible
  Plug 'pearofducks/ansible-vim'
+ " Nerdtree 
+ Plug 'preservim/nerdtree'
 call plug#end()
 
 
@@ -53,7 +55,7 @@ set shell=/bin/bash
 lua << END
 require('lualine').setup {
     options = {
-        theme = 'ayu_light'
+        theme = 'ayu_dark'
         }
 }
 END
@@ -69,3 +71,5 @@ let g:coc_filetype_map = {
   \ 'yaml.ansible': 'ansible',
   \ }
 
+" Nerdtree
+nnoremap <C-n> :NERDTree<CR>
