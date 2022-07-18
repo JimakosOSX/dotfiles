@@ -1,3 +1,4 @@
+app-accessibility/orca
 app-admin/ansible
 app-admin/sudo
 app-admin/terraform
@@ -13,6 +14,7 @@ app-editors/vscode
 app-emulation/libvirt
 app-emulation/qemu
 app-emulation/virt-manager
+app-eselect/eselect-repository
 app-misc/neofetch
 app-misc/screen
 app-misc/tmux
@@ -23,6 +25,7 @@ app-shells/tcsh
 app-shells/zsh
 app-shells/zsh-syntax-highlighting
 dev-db/postgresql
+dev-java/icedtea-bin
 dev-lang/python
 dev-python/pip
 dev-util/gitlab-runner
@@ -61,6 +64,7 @@ media-libs/sdl2-mixer
 media-libs/sdl2-ttf
 media-video/ffmpeg
 media-video/handbrake
+media-video/libva-utils
 media-video/vlc
 net-analyzer/iftop
 net-analyzer/nethogs
