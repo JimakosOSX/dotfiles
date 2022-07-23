@@ -72,6 +72,7 @@ net-analyzer/nmap
 net-dns/bind-tools
 net-im/slack
 net-im/teams
+net-libs/nodejs
 net-misc/chrony
 net-misc/rclone
 net-misc/teamviewer
