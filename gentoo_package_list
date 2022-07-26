@@ -30,6 +30,7 @@ dev-lang/python
 dev-python/pip
 dev-util/gitlab-runner
 dev-vcs/git
+games-emulation/dosbox-staging
 games-emulation/mgba
 games-emulation/vbam
 games-misc/cowsay
@@ -80,6 +81,7 @@ net-misc/zerotier
 net-p2p/qbittorrent
 net-vpn/networkmanager-openvpn
 sys-apps/exa
+sys-apps/ripgrep
 sys-boot/grub
 sys-boot/os-prober
 sys-cluster/kube-apiserver
