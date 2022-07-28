@@ -15,6 +15,7 @@ app-emulation/libvirt
 app-emulation/qemu
 app-emulation/virt-manager
 app-eselect/eselect-repository
+app-misc/mc
 app-misc/neofetch
 app-misc/screen
 app-misc/tmux
@@ -81,9 +82,11 @@ net-misc/zerotier
 net-p2p/qbittorrent
 net-vpn/networkmanager-openvpn
 sys-apps/exa
+sys-apps/pv
 sys-apps/ripgrep
 sys-boot/grub
 sys-boot/os-prober
+sys-boot/woeusb
 sys-cluster/kube-apiserver
 sys-cluster/kube-controller-manager
 sys-cluster/kube-proxy
